@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './components/Banner/Banner'
+import DigiBoard from './components/DigiBoard/DigiBoard'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <Banner></Banner>
      </header>
      <main>
-
+    <DigiBoard></DigiBoard>
      </main>
 
      <footer>
