@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import FeaturedDigiCard from './FeaturedDigiCard';
 
-const DigiCard = ({ cardData,cart,setCart }) => {
+const DigiCard = ({ cardData, cart, setCart }) => {
     // console.log(cardData);
     // console.log(cart);
-    const [isCart,setIsCart]=useState(false);
-    const handledButton=()=>
-    {
+    const [isCart, setIsCart] = useState(false);
+    const handledButton = () => {
+        const exist = cart.find(cartItem => cartItem.id === cardData.id);
         // setIsCart(!isCart);
-        setIsCart(true);
-        setCart([...cart,cardData]);
-        
+        if (!exist) {
+            setIsCart(true);
+            setCart([...cart, cardData]);
+        }
+        else {
+            const newCart = cardData.filter(cardItem => cardItem.id !== cardData.id)
+            setCart(newCart);
+        }
+
     }
     return (
         <div>
@@ -35,17 +41,17 @@ const DigiCard = ({ cardData,cart,setCart }) => {
                             <h4>
                                 <span className="text-xl font-bold text-[#101727]">$ {cardData.price}</span>
                                 <span className='text-[#627382]'>/ month</span>
-                             </h4>
+                            </h4>
                         </div>
                         <ul className="mt-2 flex flex-col gap-2 text-xs">
-                           {
-                                cardData.features.map((feature,index)=><FeaturedDigiCard key={index} feature={feature}></FeaturedDigiCard>)
-                           }
+                            {
+                                cardData.features.map((feature, index) => <FeaturedDigiCard key={index} feature={feature}></FeaturedDigiCard>)
+                            }
                         </ul>
                         <div className="mt-6">
                             <button onClick={handledButton} className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-2xl">
                                 {
-                                    isCart? "Added to cart" :"Buy Now"
+                                    isCart ? "Added to cart" : "Buy Now"
                                 }
                             </button>
                         </div>

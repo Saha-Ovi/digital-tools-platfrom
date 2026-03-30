@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiOutlineTrash } from 'react-icons/hi';
 
-const CartCard = ({item}) => {
+const CartCard = ({item,handleRemove}) => {
     return (
         <div className='space-y-8'>
             <div className='flex flex-col lg:flex-row justify-between items-center p-6 shadow-2xl bg-gray-100 rounded-2xl'>
@@ -16,7 +16,7 @@ const CartCard = ({item}) => {
                     </div>
                 </div>
                 {/* right */}
-                <div className='flex items-center gap-2'>
+                <div onClick={()=>handleRemove(item)}>
                     <h2 className='btn text-red-500'>Remove </h2> 
                 </div>
             </div>
