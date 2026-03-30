@@ -32,10 +32,10 @@ const Navbar = () => {
                         <li className='text-[#101727] font-semibold'><a>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end gap-5">
-                    <a className='text-2xl text-[#101727] hover:cursor-pointer' ><IoCartOutline /></a>
+                <div className="navbar-end gap-2 lg:gap-5">
+                    <a className='text-xl lg:text-2xl text-[#101727] hover:cursor-pointer' ><IoCartOutline /></a>
                     <a className="btn text-[#101727] rounded-full font-semibold">Login</a>
-                    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-semibold">Get Started</a>
+                    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-semibold hidden lg:inline-flex">Get Started</a>
                 </div>
             </div>
         </div>

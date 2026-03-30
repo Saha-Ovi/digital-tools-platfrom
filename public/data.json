@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "name": "ResumeAI Pro",
+    "description": "AI-powered resume builder that creates ATS-friendly resumes in minutes.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "features": [
+      "100+ professional templates",
+      "ATS optimization",
+      "AI content suggestions",
+      "Export to PDF & Word",
+      "LinkedIn profile import"
+    ],
+    "icon": "📄",
+    "category": "Career Tools"
+  },
+  {
+    "id": 2,
+    "name": "CoverLetter Genius",
+    "description": "Generate personalized, job-winning cover letters with advanced AI.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "features": [
+      "Tailored to job description",
+      "Multiple tone options",
+      "Grammar & clarity check",
+      "Unlimited generations",
+      "Export to PDF"
+    ],
+    "icon": "✉️",
+    "category": "Career Tools"
+  },
+  {
+    "id": 3,
+    "name": "CareerBundle Annual",
+    "description": "Complete career toolkit: Resume + Cover Letter + LinkedIn optimization.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "features": [
+      "ResumeAI Pro",
+      "CoverLetter Genius",
+      "LinkedIn Profile Optimizer",
+      "Interview Question Bank",
+      "Priority support"
+    ],
+    "icon": "🎯",
+    "category": "Career Tools"
+  },
+  {
+    "id": 4,
+    "name": "InterviewMaster",
+    "description": "AI mock interviews with real-time feedback and performance scoring.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Featured",
+    "features": [
+      "1000+ industry questions",
+      "Real-time AI feedback",
+      "Performance analytics",
+      "Behavioral & technical interviews",
+      "Video recording"
+    ],
+    "icon": "🎤",
+    "category": "Career Tools"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Booster",
+    "description": "Optimize your LinkedIn profile to attract recruiters and opportunities.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "features": [
+      "Profile score analysis",
+      "AI headline & about section",
+      "Experience optimization",
+      "Keyword suggestions",
+      "Weekly performance report"
+    ],
+    "icon": "🔗",
+    "category": "Career Tools"
+  },
+  {
+    "id": 6,
+    "name": "JobTracker Pro",
+    "description": "Smart job application tracker with AI insights and follow-up reminders.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Featured",
+    "features": [
+      "Unlimited applications",
+      "Status tracking",
+      "AI follow-up email generator",
+      "Application deadline alerts",
+      "Success rate analytics"
+    ],
+    "icon": "📊",
+    "category": "Career Tools"
+  },
+  {
+    "id": 7,
+    "name": "Freelance Launchpad",
+    "description": "Everything you need to start and grow your freelance career.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "features": [
+      "Proposal templates",
+      "Client contract generator",
+      "Invoice & payment tracker",
+      "Portfolio builder",
+      "Pricing strategy guide"
+    ],
+    "icon": "🚀",
+    "category": "Career Tools"
+  },
+  {
+    "id": 8,
+    "name": "Executive Resume",
+    "description": "Premium executive-level resume and LinkedIn package for senior professionals.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Popular",
+    "features": [
+      "Executive writer review",
+      "C-level templates",
+      "Achievement quantification",
+      "Personal branding strategy",
+      "1:1 consultation call"
+    ],
+    "icon": "👔",
+    "category": "Career Tools"
+  },
+  {
+    "id": 9,
+    "name": "AI Career Coach",
+    "description": "Personal AI career coach that provides 24/7 guidance, salary negotiation tips, and career path planning.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Popular",
+    "features": [
+      "Personalized career roadmap",
+      "Salary negotiation scripts",
+      "Daily career tips",
+      "Job market trend analysis",
+      "Unlimited chat support"
+    ],
+    "icon": "🧠",
+    "category": "Career Tools"
+  }
+]
