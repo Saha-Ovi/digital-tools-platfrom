@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import DigiBoard from './components/DigiBoard/DigiBoard'
@@ -14,6 +14,7 @@ const DigitalCardData = async () => {
 function App() {
 
   const DigitalCardPromise = DigitalCardData();
+  const[cart,setCart]=useState([]);
   // console.log(DigitalCardPromise);
   return (
     <>
@@ -25,7 +26,7 @@ function App() {
         <DigiBoard></DigiBoard>
       </main>
       <Suspense>
-        <AvailableDigiCard DigitalCardPromise={DigitalCardPromise}></AvailableDigiCard>
+        <AvailableDigiCard DigitalCardPromise={DigitalCardPromise} cart={cart} setCart={setCart}></AvailableDigiCard>
       </Suspense>
       <footer>
 

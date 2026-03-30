@@ -1,7 +1,9 @@
 import React, { use, useState } from 'react';
 import SelectedDigiCard from './SelectedDigiCard';
+import DigiDataCard from './DigiDataCard';
+import Cart from '../Cart/Cart';
 
-const AvailableDigiCard = ({ DigitalCardPromise }) => {
+const AvailableDigiCard = ({ DigitalCardPromise ,cart, setCart }) => {
     const DigiCardsData = use(DigitalCardPromise);
     const [activeTab,setActiveTab]=useState("products");
     // console.log(DigiCardsData);
@@ -18,9 +20,12 @@ const AvailableDigiCard = ({ DigitalCardPromise }) => {
                     <input onClick={()=>setActiveTab("cart")}  type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab==="cart"? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-base-200 text-black"}`} aria-label="Cart"  />
                 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-5'>
+            <div>
                 {
-                    DigiCardsData.map(cardData => <SelectedDigiCard key={cardData.id} cardData={cardData} ></SelectedDigiCard>)
+                    activeTab==="products"? 
+                    <DigiDataCard DigiCardsData={DigiCardsData} cart={cart} setCart={setCart}></DigiDataCard> 
+                    :
+                     <Cart cart={cart} setCart={setCart}></Cart>
                 }
             </div>
         </div>
