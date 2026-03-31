@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar'
 import Step from './components/Step/Step'
 import Pricing from './components/Pricing/Pricing'
 import Footer from './components/Footer/Footer'
+import Transform from './components/Transform/Transform'
 
 const DigitalCardData = async () => {
   const res = await fetch("/data.json");
@@ -33,6 +34,7 @@ function App() {
       </Suspense>
       <Step></Step>
       <Pricing></Pricing>
+      <Transform></Transform>
       <footer>
       <Footer></Footer>
       </footer>
