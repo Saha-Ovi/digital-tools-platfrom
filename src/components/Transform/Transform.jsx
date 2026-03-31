@@ -14,7 +14,7 @@ const Transform = () => {
                     <button className='bg-white px-2 py-3 rounded-full hover: cursor-pointer'>
                         <span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-semibold text-sm '>Explore Products</span>
                     </button>
-                    <button className='bg-[#9514FA] px-2 py-3  border border-white rounded-full hover: cursor-pointer'>
+                    <button className='bg-transparent px-2 py-3  border border-white rounded-full hover: cursor-pointer'>
                         <span className='text-white'>View Pricing</span>
                     </button>
                 </div>

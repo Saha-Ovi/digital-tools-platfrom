@@ -18,7 +18,7 @@ const DigitalCardData = async () => {
 function App() {
 
   const DigitalCardPromise = DigitalCardData();
-  const[cart,setCart]=useState([]);
+  const [cart, setCart] = useState([]);
   // console.log(DigitalCardPromise);
   return (
     <>
@@ -29,14 +29,18 @@ function App() {
       <main>
         <DigiBoard></DigiBoard>
       </main>
-      <Suspense>
+      <Suspense fallback={
+        <div className='flex justify-center items-center scale-150'>
+          <span className="loading loading-bars loading-xl"></span>
+        </div>
+      }>
         <AvailableDigiCard DigitalCardPromise={DigitalCardPromise} cart={cart} setCart={setCart}></AvailableDigiCard>
       </Suspense>
       <Step></Step>
       <Pricing></Pricing>
       <Transform></Transform>
       <footer>
-      <Footer></Footer>
+        <Footer></Footer>
       </footer>
 
 
