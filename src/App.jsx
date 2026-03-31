@@ -6,6 +6,7 @@ import AvailableDigiCard from './components/DigitalCard/AvailableDigiCard'
 import Navbar from './components/Navbar/Navbar'
 import Step from './components/Step/Step'
 import Pricing from './components/Pricing/Pricing'
+import Footer from './components/Footer/Footer'
 
 const DigitalCardData = async () => {
   const res = await fetch("/data.json");
@@ -33,7 +34,7 @@ function App() {
       <Step></Step>
       <Pricing></Pricing>
       <footer>
-
+      <Footer></Footer>
       </footer>
 
 

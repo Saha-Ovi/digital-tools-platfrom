@@ -36,7 +36,7 @@ const Navbar = ({cart}) => {
                     <a className='text-xl lg:text-2xl text-[#101727] hover:cursor-pointer' >
                         <span className='flex items-center gap-1'>
                             <IoCartOutline />
-                            <p className=' text-red-500'>({cart.length})</p>
+                            <p className=' text-zinc-500'>({cart.length})</p>
                         </span>
                     </a>
                     <a className="btn text-[#101727] rounded-full font-semibold">Login</a>
