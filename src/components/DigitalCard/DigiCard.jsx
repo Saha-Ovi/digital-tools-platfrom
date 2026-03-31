@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FeaturedDigiCard from './FeaturedDigiCard';
+import { toast } from 'react-toastify';
 
 const DigiCard = ({ cardData, cart, setCart }) => {
     // console.log(cardData);
@@ -11,10 +12,12 @@ const DigiCard = ({ cardData, cart, setCart }) => {
         if (!exist) {
             setIsCart(true);
             setCart([...cart, cardData]);
+            toast.success("Item is added to the cart");
         }
         else {
             const newCart = cardData.filter(cardItem => cardItem.id !== cardData.id)
             setCart(newCart);
+            toast.error("Item is already added to the card");
         }
 
     }
