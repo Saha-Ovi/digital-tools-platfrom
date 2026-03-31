@@ -5,6 +5,7 @@ import DigiBoard from './components/DigiBoard/DigiBoard'
 import AvailableDigiCard from './components/DigitalCard/AvailableDigiCard'
 import Navbar from './components/Navbar/Navbar'
 import Step from './components/Step/Step'
+import Pricing from './components/Pricing/Pricing'
 
 const DigitalCardData = async () => {
   const res = await fetch("/data.json");
@@ -30,6 +31,7 @@ function App() {
         <AvailableDigiCard DigitalCardPromise={DigitalCardPromise} cart={cart} setCart={setCart}></AvailableDigiCard>
       </Suspense>
       <Step></Step>
+      <Pricing></Pricing>
       <footer>
 
       </footer>

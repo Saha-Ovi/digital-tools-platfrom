@@ -5,7 +5,7 @@ import learningImg from '../../assets/rocket.png'
 
 const Step = () => {
     return (
-        <div className='py-20'>
+        <div className='py-20 m-4  bg-[#F9FAFC]'>
             <div className='container mx-auto space-y-8'>
                 {/* step */}
                 <div className='text-center space-y-3'>
