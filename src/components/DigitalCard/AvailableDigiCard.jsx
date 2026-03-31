@@ -17,7 +17,7 @@ const AvailableDigiCard = ({ DigitalCardPromise ,cart, setCart }) => {
                 {/* Tab */}
                 <div className="tabs tabs-box bg-transparent gap-10">
                     <input onClick={()=>setActiveTab("products")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab==="products"? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-base-200 text-black"}`} aria-label="Products" defaultChecked />
-                    <input onClick={()=>setActiveTab("cart")}  type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab==="cart"? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-base-200 text-black"}`} aria-label="Cart"  />
+                    <input onClick={()=>setActiveTab("cart")}  type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab==="cart"? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"bg-base-200 text-black"}`} aria-label={`Cart (${cart.length})`}  />
                 </div>
             </div>
             <div>

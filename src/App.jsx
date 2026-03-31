@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner'
 import DigiBoard from './components/DigiBoard/DigiBoard'
 import AvailableDigiCard from './components/DigitalCard/AvailableDigiCard'
 import Navbar from './components/Navbar/Navbar'
+import Step from './components/Step/Step'
 
 const DigitalCardData = async () => {
   const res = await fetch("/data.json");
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <header>
-        <Navbar></Navbar>
+        <Navbar cart={cart}></Navbar>
         <Banner></Banner>
       </header>
       <main>
@@ -28,6 +29,7 @@ function App() {
       <Suspense>
         <AvailableDigiCard DigitalCardPromise={DigitalCardPromise} cart={cart} setCart={setCart}></AvailableDigiCard>
       </Suspense>
+      <Step></Step>
       <footer>
 
       </footer>
