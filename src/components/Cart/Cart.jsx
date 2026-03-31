@@ -1,6 +1,7 @@
 import React from 'react';
 import CartCard from './CartCard';
 import { toast } from 'react-toastify';
+import { BsCart3 } from 'react-icons/bs';
 
 const Cart = ({ cart, setCart }) => {
     // console.log(cart);
@@ -24,7 +25,10 @@ const Cart = ({ cart, setCart }) => {
             <div className='space-y-6 hover:cursor-pointer'>
                 {
                     cart.length === 0 ?
-                        <div className='shadow-xl bg-zinc-200 rounded-2xl text-center p-4 space-y-4'>
+                        <div className='shadow-xl bg-zinc-200 rounded-2xl text-center p-4 space-y-6'>
+                            <div className='flex justify-center items-center py-4 '>
+                                <span className='text-6xl'><BsCart3 /></span>
+                            </div>
                             <h2 className='text-2xl font-extrabold'>Cart is Empty</h2>
                             <p className='text-xl font-bold'>Please Add item to the cart</p>
                         </div>
