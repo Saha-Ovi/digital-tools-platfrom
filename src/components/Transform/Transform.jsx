@@ -7,7 +7,7 @@ const Transform = () => {
                 {/* heading */}
                 <div className='text-white text-center py-6 space-y-3'>
                     <h2 className='text-3xl lg:text-5xl font-bold'>Ready to Transform Your Workflow?</h2>
-                    <p className='text-sm'>Join thousands of professionals who are already using Digitools to work smarter. <br />Start your free trial today.</p>
+                    <p className='text-xs lg:text-sm'>Join thousands of professionals who are already using Digitools to work smarter. <br />Start your free trial today.</p>
                 </div>
                 {/* button */}
                 <div className=' flex justify-center items-center gap-4'>
@@ -19,7 +19,7 @@ const Transform = () => {
                     </button>
                 </div>
                 {/* small text */}
-                <div className='flex justify-center text-sm text-zinc-300 gap-2'>
+                <div className='flex justify-center text-sm text-zinc-300 lg:gap-2'>
                     <p>14-day free trial •</p>
                     <p> No credit card required • </p>
                     <p>Cancel anytime</p>

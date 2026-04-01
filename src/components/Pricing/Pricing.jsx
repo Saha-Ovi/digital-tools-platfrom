@@ -7,8 +7,8 @@ const Pricing = () => {
             <div className='container mx-auto space-y-8'>
                 {/* pricing */}
                 <div className='text-center space-y-3'>
-                    <h2 className='text-[#101727] text-3xl lg:text-5xl '>Simple, Transparent Pricing</h2>
-                    <p className='text-[#627382] text-lg'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+                    <h2 className='text-[#101727] p-1 lg:p-0 text-2xl lg:text-5xl '>Simple, Transparent Pricing</h2>
+                    <p className='text-[#627382]  p-1 lg:p-0 text-sm lg:text-lg'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
                 {/* card section */}
                 <div className='grid grid-cols-1 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-8 justify-between items-center'>

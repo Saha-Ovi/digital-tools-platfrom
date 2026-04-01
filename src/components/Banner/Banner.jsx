@@ -8,7 +8,7 @@ const Banner = () => {
         <div className='container mx-auto'>
             <div className="hero min-h-4/5">
                 <div className="hero-content gap-10 lg:gap-80 flex-col lg:flex-row-reverse">
-                    <img src={bannerImg} className="max-w-sm rounded-lg shadow-2xl animate-pulse"
+                    <img src={bannerImg} className="max-w-xs lg:max-w-sm rounded-lg shadow-2xl animate-pulse"
                     />
                     <div className='text-center lg:text-left space-y-5'>
                         <h5 className='badge px-3 py-5 rounded-full bg-[#E1E7FF]'>
@@ -21,7 +21,7 @@ const Banner = () => {
                             <br />
                             Explore Products
                         </p>
-                        <div className='flex gap-4 justify-center lg:justify-start'>
+                        <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center'>
                             <button className=" bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-6 py-3 rounded-full hover:cursor-pointer">Explore Products</button>
                             <button className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-0.5 hover:cursor-pointer'>
                                 <span className='flex items-center gap-2 bg-white px-6 py-3 rounded-full '>

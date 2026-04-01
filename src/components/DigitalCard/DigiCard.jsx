@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FeaturedDigiCard from './FeaturedDigiCard';
 import { toast } from 'react-toastify';
 
+
 const DigiCard = ({ cardData, cart, setCart }) => {
     // console.log(cardData);
     // console.log(cart);
@@ -52,11 +53,12 @@ const DigiCard = ({ cardData, cart, setCart }) => {
                             }
                         </ul>
                         <div className="mt-6">
-                            <button onClick={handledButton} className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-2xl">
-                                {
-                                    isCart ? "Added to cart" : "Buy Now"
-                                }
-                            </button>
+                           {
+                             isCart ?
+                               <button onClick={handledButton} className="btn bg-green-500 text-white text-center btn-block rounded-2xl">"Added to cart"</button>
+                              :
+                              <button onClick={handledButton} className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-2xl">"Buy Now"</button>
+                           }
                         </div>
                     </div>
                 </div>
